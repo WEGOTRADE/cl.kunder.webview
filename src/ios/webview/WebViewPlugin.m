@@ -70,7 +70,6 @@ NSArray* results;
       results = command.arguments;
       dispatch_async(dispatch_get_main_queue(), ^{
         [self.viewController dismissViewControllerAnimated:NO completion:nil];
-        [self dispose];
       });
 
       CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
